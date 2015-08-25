@@ -120,7 +120,7 @@ https://github.com/maellak/EllakAndroidEducation και πατώντας το κ
   upstream  https://github.com/maellak/EllakAndroidEducation.git (push)
   ```
 
-Αν δεν υπάρχει το `upstream`, δώστε:
+  Αν δεν υπάρχει το `upstream`, δώστε:
 
   ```
   git remote add upstream https://github.com/maellak/EllakAndroidEducation.git
