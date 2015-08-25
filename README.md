@@ -1,8 +1,8 @@
 # Intro to Git in ελληνικά
 
-TL;DR
+## TL;DR
 
-Τρέχουν μία φορά στην αρχή.
+Τρέχουν μία φορά στην αρχή:
 
 1. Fork parent repo
 1. `git clone https://github.com/username/repository.git`
@@ -10,7 +10,7 @@ TL;DR
 1. `git remote add upstream https://github.com/maellak/repository.git`
 
 
-Βήματα που ακολούθουνται κάθε φορά που γίνονται αλλαγές.
+Βήματα που ακολούθουνται κάθε φορά που γίνονται αλλαγές:
 
 1. `git checkout master`
 1. `git branch feature-a`
