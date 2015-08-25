@@ -49,7 +49,7 @@ https://github.com/maellak/EllakAndroidEducation και πατώντας το κ
 τις αλλαγές:
 
   ```
-  git remote add upstream https://github.com/maellak/EllakAndroidEducation
+  git remote add upstream https://github.com/maellak/EllakAndroidEducation.git
   ```
 
 1. Φτιάχνουμε νέο branch με ένα περιγραφικό όνομα:
