@@ -1,33 +1,31 @@
-# Intro to Git in ελληνικά
+# Εισαγωγή στο Git στα ελληνικά
 
 ## TL;DR
 
-Τρέχουν μία φορά στην αρχή:
+Τρέχουμε μία φορά στην αρχή:
 
-1. Fork parent repo
 1. `git clone https://github.com/username/repository.git`
 1. `cd repository`
 1. `git remote add upstream https://github.com/maellak/repository.git`
 
 
-Βήματα που ακολούθουνται κάθε φορά που γίνονται αλλαγές:
+Βήματα που ακολουθούνται κάθε φορά που γίνονται αλλαγές:
 
 1. `git checkout master`
 1. `git branch feature-a`
 1. `git checkout feature-a`
-1. Make changes
+1. Κάνουμε τις αλλαγές μας.
 1. `git add file_1 file_2 dir/file_3`
 1. `git commit -m 'Message of what changed'`
 1. `git push origin feature-a`
-1. Go to GitHub and make a Pull Request
+1. Πάμε στο GitHub και κάνουμε ένα Pull Request
 
 ### Fork parent repository
 
-Κάνουμε fork το parent repository μέσω του github πηγαίνοντας στο
+Κάνουμε fork το κύριο (parent) repository μέσω του GitHub πηγαίνοντας στο
 https://github.com/maellak/EllakAndroidEducation και πατώντας το κουμπί **Fork** πάνω
 δεξιά. Αυτόματα θα μεταφερθούμε στο δικό μας πλέον repository. Αυτό που έγινε
-είναι να δημιουργηθεί ένα πανομοιότυπο με το parent repository που έχει μέχρι
-και τις αλλαγές τη στιγμή που έγινε το fork.
+είναι να δημιουργηθεί ένα πανομοιότυπο με το κύριο repository που έχει τις αλλαγές μέχρι τη στιγμή που έγινε το fork.
 
 Προσοχή. Ό,τι αλλαγές γίνουν πλέον στο parent, δε μεταφέρονται αυτόματα στο
 δικό μας fork, θα πρέπει κάθε τόσο να τραβάμε τις αλλαγές.
@@ -45,7 +43,7 @@ https://github.com/maellak/EllakAndroidEducation και πατώντας το κ
   cd EllakAndroidEducation
   ```
 
-1. Ορίζουμε το parent repository ως remote ώστε αργότερα να μπορούμε να πάρουμε
+1. Ορίζουμε το κύριο repository ως remote ώστε αργότερα να μπορούμε να πάρουμε
 τις αλλαγές:
 
   ```
@@ -83,7 +81,7 @@ https://github.com/maellak/EllakAndroidEducation και πατώντας το κ
   ```
 
   **Προσοχή:** Το commit message να είναι κάτι περιγραφικό, όχι πάνω από 70
-      χαρακτήρες.
+  χαρακτήρες.
 
 1. Push τις αλλαγές στο GitHub:
 
@@ -98,10 +96,10 @@ https://github.com/maellak/EllakAndroidEducation και πατώντας το κ
 ## Pull Requests
 
 
-## Repo sync
+## Συγχρονισμός repository
 
-Από τη στιγμή που συνεργαζόμαστε πολλά άτομα πάνω στο ιδιο project, πρέπει το
-δικό μας repository να είναι πάντα σε sync με το κύριο ώστε να έχουμε τοπικά
+Από τη στιγμή που συνεργαζόμαστε πολλά άτομα πάνω στο ίδιο project, πρέπει το
+δικό μας repository να είναι πάντα συγχρονισμένο με το κύριο (parent) ώστε να έχουμε τοπικά
 τις αλλαγές που έχουν γίνει από τους άλλους.
 
 1. Ανοίγουμε ένα terminal (για Windows το Git Shell) και πάμε στον κατάλογο όπου
@@ -120,7 +118,7 @@ https://github.com/maellak/EllakAndroidEducation και πατώντας το κ
   upstream  https://github.com/maellak/EllakAndroidEducation.git (push)
   ```
 
-  Αν δεν υπάρχει το `upstream`, δώστε:
+  Αν δεν υπάρχει το `upstream`, δίνουμε:
 
   ```
   git remote add upstream https://github.com/maellak/EllakAndroidEducation.git
@@ -137,13 +135,13 @@ https://github.com/maellak/EllakAndroidEducation και πατώντας το κ
   git pull upstream master
   ```
 
-Αν δουλεύατε στο master branch σας, ενδέχεται να υπάρχουν conflicts.
-Πριν προχωρήσετε πρέπει να γίνουν resolved. Δείτε [εδώ](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/) έναν οδηγό.
+Αν δουλεύατε στο master branch σας, ενδέχεται να υπάρχουν διενέξεις (conflicts).
+Πριν προχωρήσετε πρέπει να επιλυθούν (resolve). Δείτε [έναν οδηγό](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/).
 
 
 # Tutorials
 
-* https://try.github.io/ (recommended)
+* https://try.github.io/ (προτεινόμενο)
 * https://guides.github.com/
 * http://git-scm.com/book/en/v2
 * http://gitimmersion.com/
